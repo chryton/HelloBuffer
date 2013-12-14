@@ -1,0 +1,16 @@
+/* Styles for the site
+* Author: Andrew E Mauney
+* Since: 0.1
+* @chyrtonbaine
+*/
+
+@mixin dib{
+	display: inline-block;
+	zoom: 1;
+	*display: block;
+	vertical-align: top;
+}
+
+section{
+	@include dib;
+}
