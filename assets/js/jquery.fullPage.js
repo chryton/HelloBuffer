@@ -1,9 +1,11 @@
 /**
- * fullPage 1.5.2
- * https://github.com/alvarotrigo/fullPage.js
+ * fullPage 1.5.2 Fork v. 1.0
+ * Fork: https://github.com/chryton/fullPage.js
+ * Original: https://github.com/alvarotrigo/fullPage.js
  * MIT licensed
  *
  * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+ * Fork by Andrew E. Mauney
  */
 
 (function($) {
