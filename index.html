@@ -1,15 +1,74 @@
-<!DOCTYPE>
-
-<link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
-<script	href="/assets/js/jquery.fullPage.js"></script>
-
+<!DOCTYPE html>
 <html>
+<head>
+	<title>Hello Buffer</title>
+	<link rel="stylesheet" type="text/css" href="/assets/js/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="/assets/css/styles.css" />
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+		
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>	
+	
+	<script type="text/javascript" src="/assets/js/jquery.fullPage.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$.fn.fullpage();
+		});
+	</script>
+</head>
 	<body>
-		<section>
+		<section class="active" id="section0">
 			<h1>Oh, Hello Buffer!</h1>
 		</section>
-		<section>
+		<section id="section1">
 			<h2>I've been using your product for almost this many. (photo of a kid's hand with two fingers up)</h2>
+		</section>
+		<section id="section2"><h2>And I quickly grew to love not only the app but also the people behind the app.</h2></section>
+		<section id="section3"><h2>So, after reading your blogs, tweets, and interviews, I have come to one conclusion:</h2></section>
+		<section id="section4"><h2>I want to work with you.</h2></section>
+		<section id="section5">
+			<div class="slide"><h2>So why would you want to work with me? Let me give you a few reasons &rtarr;:</h2></div>
+			<div class="slide">I helped save babies in Belize (true story).</div>
+			<div class="slide">Though I may have a seemingly odd skill-set and degrees (Philosophy &amp; History B.A. and Interactive Media M.A.), that combination of skills has given me insight to how people think through problems and also has further reinforced my insatiable urge to learn.</div>
+			<div class="slide">I think that your emphasis on transparency and willingness to try new things is at the core of what I believe in and is something that is desperately needed in our industry (both product-wise and agency-wise). If I am holding information it is because I don't have enough to make an informed decision on yet rather than just keeping someone in the dark.</div>
+			<div class="slide">You position yourselves as both thought leaders but also with your ears to the ground to stay open to change and other possibilities. As someone who has lived an academic life then gone into the workforce, the ability to straddle both rigorous and open is diffcult but rewarding both from a personal and a consumer standpoint as you keep learning and are able to keep the learning process going for everyone involved.</div>
+			<div class="slide">Your responsiveness to customers is indicative of a company who focuses on not only the big picture of how the product works but also that there are real users with real, legitimate problems and you may not always have it right the first time. Having been in an agency-setting for almost two years, I can say that I know how huge a difference even a short email or tweet saying "We're on it" can make all the difference to a client or user. I have to ive behind my email and IM client for the majority of the day and have dealt with the whole spectrum of issues from "something is wrong, but its not affecting anyone right now" to the walking-out-the-door-then-something-has-melted-down call. Though I don't think anyone loves the latter, the satisfaction of fixing something then hearing a sigh of relief come out of your email can be a gratifying experience, no matter the stress level.</div>
+			<div class="slide">While in graduate school I ran a team of 4 to help deliver a site and social media package for the Citizens Foundation in Iceland. This required not only answering to the client and our main project manager, but also dividing my time between management and creating devliberable code within a two-week timeframe. Once joining a small agency, I have had to split my time even more between being a social media strategist, project manager, developer, creative associate, product manager, UX consultant, among others. I recently wrapped a year and a half long project with my agency where I had to be the project manager, development project manager, developer, UX designer, and content manager. The project, which has it's own long story associated with it (feel free to ask), forced me to see some of the finer aspects of those positions and what can happen when those different positions conflict with one another and the client. It is easy to say I wear a lot of hats, but I'd rather say I have many squares in my quilt; each part, no matter how small, is integral to who I am, how I think, and influence everything else I do.</div>
+			<div class="slide">Learning is a huge part of who I am and I can see from what Buffer posts about and the job descriptions, learning and growth is a big part of what Buffer is about. I love trying something new and even if the project doesn't work out, I enjoy the process of trying then applying what I learned to something new. For instance, this microsite you are reading is an experiment in iteslf: tying in social media, a javascript library I haven't used before, along with stretching some of my CSS techniques that I have been further developing over recent projects.</div>
+		</section>
+		<section id="section6">So why go through this elaborate setting just to get a job?</section>
+		<section id="section7">Well, I don't want a job. I want something that I am excited to wake up to and work on. I want something that respects my time as much as I respect it's time. I want to work as a team rather than a department.</section>
+		<section id="section8">I want to work <em>with</em> you. Not <em>for</em> you.</section>
+		<section id="section9">If all this gets is a few interesting conversations, then even though I will be disappoiinted that I didn't get to join the team, I will have at the very least had a dialogue with a group of people that I deeply respect and will give me a bit of perspective.</section>
+		<section id="section10">
+			<div class="slide">So I guess you have a couple of options now:</div>
+			<div class="slide">1. Ignore this approach to starting a conversation with you.</div>
+			<div class="slide">2. Contact me, tell me I a crazy person, but not eventually hire me.</div>
+			<div class="slide">3. Contact me, find out more about how I will bring world domination to Buffer, and hire me.</div>
+			<div class="slide">4. Contact me, tell me I am crazy, then </div>
+		</section>
+		<section id="section11">
+			<h2>Colophon</h2>
+			<h3>Tools Used:</h3>
+			<ul>
+				<li>My own <a href="https://github.com/chryton/fullPage.js">fork</a> of <a href="https://github.com/alvarotrigo/fullPage.js">fullPage.js</a></li>
+				<li><a href="http://sass-lang.com/">SASS</a> (technically SCSS)</li>
+				<li><a href="https://github.com/chryton/hellobuffer">Git/GitHub</a></li>
+				<li><a href="http://www.sublimetext.com/2">Sublime Text 2</a>
+					<ul>
+						<li><a href="https://sublime.wbond.net/packages/SASS%20Build">SASS Build</a></li>
+						<li><a href="https://sublime.wbond.net/packages/Emmet">Emmet</a></li>
+						<li><a href="https://sublime.wbond.net/packages/Modific">Modific</a></li>
+					</ul>
+				</li>
+				<li><a href="">Tower</a> (still working on getting comfortable with git in the command line)</li>
+				<li><a href="">Transmit</a> (for checks and occasional <a href="http://css-tricks.com/deployment/">commando deployment</a>)</li>
+			</ul>
 		</section>
 	</body>
 </html>
