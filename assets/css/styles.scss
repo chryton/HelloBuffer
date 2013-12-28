@@ -1,7 +1,7 @@
 /* Styles for the site
-* Author: Andrew E Mauney
+* Author: Andrew E. Mauney
 * Since: 0.1
-* @chyrtonbaine
+* @chrytonbaine
 */
 
 @mixin dib{
@@ -12,5 +12,13 @@
 }
 
 section{
-	@include dib;
+	#section1{
+		background: green;
+	}
+	#section5{
+		background: purple;
+	}
+	.slide{
+		background: purple;
+	}
 }
