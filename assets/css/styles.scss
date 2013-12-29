@@ -1,4 +1,4 @@
-/* Styles for the site
+/* Styles for the Hello Buffer site
 * Author: Andrew E. Mauney
 * Since: 0.1
 * @chrytonbaine
@@ -11,11 +11,72 @@
 	vertical-align: top;
 }
 
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+	font-family: 'Roboto Slab', serif;
+	font-size: 45px;
+}
+
 section{
-	#section1{
+	h1{text-align: center}
+	&#section0{
+		.buffer-top{
+			position: relative;
+			left: 48%;
+			width: 0; 
+			height: 0; 
+			border-left: 33px solid transparent;
+			border-right: 33px solid transparent;
+			border-bottom: 18px solid black;
+		}
+		.square1{
+			// background: black;
+			// width: 18px;
+			position: relative;
+			left: 48%;
+			width: 0; 
+				height: 0; 
+				border-left: 33px solid transparent;
+				border-right: 33px solid transparent;
+				border-top: 18px solid black;
+				z-index: 5
+		}
+		.square2{
+			position: relative;
+			left: 48%;
+			width: 0; 
+				height: 0; 
+				border-left: 33px solid transparent;
+				border-right: 33px solid transparent;
+				border-top: 18px solid white;
+				// background: pink;
+				top: -11px;
+				z-index: 4;
+		}
+		.square3{@extend .square1;
+		z-index: 3;
+		top: -37px;}
+		.square3top{@extend .buffer-top;
+			z-index: 3;
+			top: -37px;}
+		.square4{@extend .square2;
+			top: -47px;
+			z-index: 2;
+			}
+		.square5{@extend .square1;
+			z-index: 1;
+		top: -73px;}
+		.square5top{@extend .buffer-top;
+		z-index: 1;
+		top: -73px;}
+	}
+	&#section1{
 		background: green;
 	}
-	#section5{
+	&#section5{
 		background: purple;
 	}
 	.slide{
