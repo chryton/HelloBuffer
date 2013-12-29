@@ -76,10 +76,39 @@ section{
 	&#section1{
 		background: green;
 	}
+	.buffer-team{
+		width: 75%;
+		margin: 15px auto;
+		.team-member{
+			width: 200px;
+			margin-right: 15px;
+			img{
+				width: 200px;
+				-webkit-border-radius: 105px;
+				-moz-border-radius: 105px;
+				border-radius: 105px;
+				border: 5px solid #ccc;
+			}
+			@include dib;
+		}
+	}
 	&#section5{
 		background: purple;
 	}
 	.slide{
-		background: purple;
+		background: #76D1F5;
+	}
+	span.arrow{
+		font-size: 1.75em;
+		vertical-align: bottom;
+		line-height: 1em;
+	}
+	.bottom-img{
+		height: 500px;
+		width: 100%;
+		position: relative;
+		top: 50%;
+		background: url('http://baconmockup.com/1300/1200');
+		background-size: cover;
 	}
 }
