@@ -21,7 +21,10 @@ h1{
 }
 
 section{
-	h1,h2{text-align: center}
+	h1,h2,h3{
+		text-align: center;
+		padding: 0 10%;
+	}
 	&#section0{
 		.buffer-top{
 			position: relative;
@@ -101,6 +104,10 @@ section{
 	}
 	.slide{
 		background: #76D1F5;
+		p{
+			width: 50%;
+			margin: 0 auto;
+		}
 	}
 	span.arrow{
 		font-size: 1.75em;
