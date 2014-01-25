@@ -74,7 +74,7 @@ section{
 		top: -73px;}
 	}
 	&#section1{
-		background: green;
+		text-align: center;
 	}
 	.buffer-team{
 		width: 75%;
@@ -91,6 +91,10 @@ section{
 			}
 			@include dib;
 		}
+	}
+	&#section3{
+		background: url('../img/buffer-twitter.png');
+		background-size: cover;
 	}
 	&#section5{
 		background: purple;
