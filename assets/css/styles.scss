@@ -143,4 +143,17 @@ section{
 		background: url('http://baconmockup.com/1300/1200');
 		background-size: cover;
 	}
+	.colophon{
+		width: 35%;
+		@include mza;
+		& > ul{
+			padding: 0 0 40px 40px;
+			li{
+				margin-top: 7px;
+			}
+		}
+		a{
+			color: $buffergreen;
+		}
+	}
 }
