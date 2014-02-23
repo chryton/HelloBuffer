@@ -4,11 +4,16 @@
 * @chrytonbaine
 */
 
+$buffergreen: #76b852;
+
 @mixin dib{
 	display: inline-block;
 	zoom: 1;
 	*display: block;
 	vertical-align: top;
+}
+@mixin mza {
+	margin:0 auto;
 }
 
 body{
