@@ -22,7 +22,13 @@ body{
 
 h1{
 	font-family: 'Roboto Slab', serif;
-	font-size: 45px;
+	font-size: 2.81em;
+}
+a{
+	text-decoration: none;
+	&:hover{
+		text-decoration: underline;
+	}
 }
 
 section{
@@ -30,6 +36,8 @@ section{
 		text-align: center;
 		padding: 0 10%;
 	}
+	h2{font-size: 1.7em;}
+	h3{font-size: 1.2em;}
 	&#section0{
 		.buffer-top{
 			position: relative;
@@ -65,21 +73,25 @@ section{
 				z-index: 4;
 		}
 		.square3{@extend .square1;
-		z-index: 3;
-		top: -37px;}
+			z-index: 3;
+			top: -37px;
+		}
 		.square3top{@extend .buffer-top;
 			z-index: 3;
-			top: -37px;}
+			top: -37px;
+		}
 		.square4{@extend .square2;
 			top: -47px;
 			z-index: 2;
-			}
+		}
 		.square5{@extend .square1;
 			z-index: 1;
-		top: -73px;}
+			top: -73px;
+		}
 		.square5top{@extend .buffer-top;
-		z-index: 1;
-		top: -73px;}
+			z-index: 1;
+			top: -73px;
+		}
 	}
 	&#section1{
 		text-align: center;
