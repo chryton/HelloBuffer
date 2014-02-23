@@ -2,6 +2,10 @@
 <html>
 <head>
 	<title>Hello Buffer</title>
+	<!-- Hi again and thanks for taking a look at my code! 
+		I'm not a huge fan of inline documentation unless I am sending out something others will be using quite regularly. 
+		At my agency, I am also the guy who writes the end-user docs which we use our own doc-presenter for at http://docs.madmonkdev2.com.
+		But for you, I guess I can make a minor change in my workflow and put some thoughts/explanations. -->
 	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="assets/js/jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
@@ -24,6 +28,8 @@
 	<body>
 		<section class="active" id="section0" data-anchor="welcome">
 			<h1>Oh, Hello Buffer!</h1>
+			<!-- So, this was more ambitious than I had hoped but I was able to pull it off after a few iterations. 
+			I really wanted to try and use some pseudo-elements and nail your rounded-corners but the stacking elements didn't really like that. -->
 			<div class="buffer-top">&nbsp;</div>
 			<div class="square1">&nbsp;</div>
 			<div class="square2">&nbsp;</div>
@@ -35,12 +41,15 @@
 			
 		</section>
 		<section id="section1" data-anchor="i-am-a-user">
+			<!-- So here is a place where I made some modifications from the original fullPage.JS and forced it to look for the section element instead of .section.
+			This brought along some minor oddities that had to work around and I hope to work through at some point in the future. -->
 			<h2>I've been using Buffer pretty religiously for almost this many:</h2>
 			<img src="assets/img/this-many.jpg" alt="This Many (2)">
 		</section>
 		<section id="section2"data-anchor="your-awesome-team">
 			<h2>And I quickly grew to love not only the app but also the awesome people behind the app:</h2>
 			<div class="buffer-team">
+				<!-- Okay, yes, I am being a terrible person and hotlinking from your CloudFront CDN. I figured it would be a bit less creepy doing this than just housing all your photos on my own server. :) -->
 				<div class="team-member"><img src="https://d389zggrogs7qo.cloudfront.net/images/team/joel.png" alt=""></div>
 				<div class="team-member"><img src="https://d389zggrogs7qo.cloudfront.net/images/team/leo.png" alt=""></div>
 				<div class="team-member"><img src="https://d389zggrogs7qo.cloudfront.net/images/team/carolyn.jpg" alt=""></div>
