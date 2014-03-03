@@ -5,6 +5,7 @@
 */
 
 $buffergreen: #76b852;
+$andreworange: #FC7F13;
 
 @mixin dib{
 	display: inline-block;
@@ -143,6 +144,19 @@ section{
 		background: url('http://baconmockup.com/1300/1200');
 		background-size: cover;
 	}
+	.contact-this{
+		@include mza;
+		width: 143px;
+		font-size: 40px;
+		a{
+			@include dib;
+			color: $buffergreen;
+			margin-left: 10px;
+			&:first-child{
+				margin-left: 0px;
+			}
+		}
+	}
 	.colophon{
 		width: 35%;
 		@include mza;
@@ -151,6 +165,10 @@ section{
 			li{
 				margin-top: 7px;
 			}
+		}
+		h2{
+			font-family: 'Yellowtail', cursive;
+			font-size: 2.7em;
 		}
 		a{
 			color: $buffergreen;
