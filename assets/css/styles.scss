@@ -149,19 +149,31 @@ section{
 	}
 	.contact-this{
 		@include mza;
-		width: 143px;
+		width: 203px;
 		font-size: 40px;
 		a{
 			@include dib;
 			color: $buffergreen;
 			margin-left: 10px;
+			text-decoration: none;
 			&:first-child{
 				margin-left: 0px;
 			}
+			&:hover{
+				color: $bufferblue;
+			}
 		}
+	}
+	&#section7, &#section9{
+		background: url('https://raw.github.com/subtlepatterns/SubtlePatterns/gh-pages/white_wall_hash.png');
+	}
+	&#section12{
+		// background: url('https://raw.github.com/subtlepatterns/SubtlePatterns/gh-pages/xv.png');
+		background: url("https://raw.github.com/subtlepatterns/SubtlePatterns/gh-pages/argyle.png");
 	}
 	.colophon{
 		width: 35%;
+		color: white;
 		@include mza;
 		& > ul{
 			padding: 0 0 40px 40px;
