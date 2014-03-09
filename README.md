@@ -1,3 +1,15 @@
 # Hello Buffer
 
 This is meant as a small project to create a sort of interactive coverletter to start a conversation with one of my favorite companies.
+
+## A Couple of Assumptions
+
+I made several assumptions with the site to not only speed up my development time (which has been the free time I can muster, which isn't much) but also present the best viewing experience.
+
+My first major assumption was that mobile was not a large concern. This plugin works fine on mobile but isn't xactly hte most ideal viewing experience. In most cases, if I were in an interview, you wouldn't (or shouldn't) be looking at your phone but rather my resume or my beard. I am a large believer in building toward your audience and letting the data lead you in the right direction. For example, if you are building a site for a senior living home, it is probably likely that you don't need a fully responsive site as most of the people looking at the site are either loved ones trying to find a place to put their elderly family members or people looking for jobs. Now, if you were creating an app where people could check on the status of a family member at the center or there is a bit of traffic to pages like "Contact" and directions to get to the home, then there would be some reason to be thinking mobile.
+
+A second assumption I made was that IE is not a player. What I mean is that besides my general loathing for anything below IE 9, there doesn't seem to be the need to support anything special with IE. The Buffer team is not a corporate environment, there isn't a legacy system that I am having to cater to (like in a healthcare vertical), and with several of the effects I wanted to acheive, IE would have been such a hassle to accommodate that it wouldn't have been viable given my timeframe. Also, the fact that you get an MacBook Air when joining Buffer, I would like to think it is safe to assume that the Buffer team is not using that piece of hardware as an overly expensive Windows box.
+
+A third assumption, which I initially thought about just putting in the comments in the code but decided against, is that you'll notice a few practices that I chose to ignore. First, you will notice that my SCSS file is flat. When writing CSS that amounts to barely 200 lines, it seemed overly asanine to go with multiple includes which would only be a few lines each and would potentially slow down build time (by up to a second in my tests); plus there is osmething to be said about being able to search all in one file to find a line to tweak. I also opted to make a few changes to the defaults within the fullPage.js rather than calling the funcion while passing new options. This was to basically to make a miniscule performance improvement while at the same time setting defaults to what I need rather than overriding defaults.
+
+## Thanks for Taking a Look!
