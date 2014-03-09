@@ -19,9 +19,14 @@ $andreworange: #FC7F13;
 @mixin mza {
 	margin:0 auto;
 }
+@mixin hw ($height, $width: $height){
+	height: $height;
+	width: $width;
+}
 
 body{
 	font-family: 'Open Sans', sans-serif;
+	font-size: 1em
 }
 
 h1{
