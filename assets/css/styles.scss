@@ -63,23 +63,23 @@ section{
 			position: relative;
 			left: 48%;
 			width: 0; 
-				height: 0; 
-				border-left: 33px solid transparent;
-				border-right: 33px solid transparent;
-				border-top: 18px solid black;
-				z-index: 5
+			height: 0; 
+			border-left: 33px solid transparent;
+			border-right: 33px solid transparent;
+			border-top: 18px solid black;
+			z-index: 5
 		}
 		.square2{
 			position: relative;
 			left: 48%;
 			width: 0; 
-				height: 0; 
-				border-left: 33px solid transparent;
-				border-right: 33px solid transparent;
-				border-top: 18px solid white;
-				// background: pink;
-				top: -11px;
-				z-index: 4;
+			height: 0; 
+			border-left: 33px solid transparent;
+			border-right: 33px solid transparent;
+			border-top: 18px solid white;
+			// background: pink;
+			top: -11px;
+			z-index: 4;
 		}
 		.square3{@extend .square1;
 			z-index: 3;
@@ -132,12 +132,30 @@ section{
 		background: #76D1F5;
 		p{
 			width: 50%;
-			font-size: 1.4em;
+			font-size: 1.438em;
 			@include mza;
 		}
 		a{
 			color: white;
 		}
+		.icon-tron{
+			@include hw (70px);
+			@include mza;
+			background:url('../img/tron_identity_disk_icon.png');
+			background-size: contain;
+		}
+		[class^="icon-"], [class*=" icon-"]{
+			text-align: center;
+			font-size: 50px;
+			margin-bottom: 15px;;
+		}
+	}
+	&#section6, &#section7, &#section9, &#section11{
+		background: url('https://raw.github.com/subtlepatterns/SubtlePatterns/gh-pages/white_wall_hash.png');
+	}
+	&#section12{
+		// background: url('https://raw.github.com/subtlepatterns/SubtlePatterns/gh-pages/xv.png');
+		background: url("https://raw.github.com/subtlepatterns/SubtlePatterns/gh-pages/argyle.png");
 	}
 	span.arrow{
 		font-size: 1.75em;
@@ -168,13 +186,6 @@ section{
 				color: $bufferblue;
 			}
 		}
-	}
-	&#section7, &#section9{
-		background: url('https://raw.github.com/subtlepatterns/SubtlePatterns/gh-pages/white_wall_hash.png');
-	}
-	&#section12{
-		// background: url('https://raw.github.com/subtlepatterns/SubtlePatterns/gh-pages/xv.png');
-		background: url("https://raw.github.com/subtlepatterns/SubtlePatterns/gh-pages/argyle.png");
 	}
 	.colophon{
 		width: 35%;
