@@ -17,7 +17,7 @@
 			'slidesColor' : [],
 			'anchors':[],
 			'scrollingSpeed': 700,
-			'easing': 'easeInQuart',
+			'easing': 'easeOutSine',
 			'menu': false,
 			'navigation': false,
 			'navigationPosition': 'right',
