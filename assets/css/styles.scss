@@ -204,5 +204,16 @@ section{
 		a{
 			color: $buffergreen;
 		}
+		.icon-transformers{
+			text-align: center;
+			font-size: 25px;
+			color: transparent;
+			&:hover{
+				color: white;
+			}
+		}
+	}
+	.center-text{
+		text-align: center;
 	}
 }
