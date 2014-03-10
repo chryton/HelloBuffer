@@ -22,8 +22,27 @@
 	<script type="text/javascript" src="assets/js/jquery.fullPage.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
-			$.fn.fullpage();
+			$.fn.fullpage({
+				afterRender : addNextLink()
+			});
 			$('a:not([href*="'+window.location.host+'"]):not([href^="#"]):not([href^="/"]):not([href^="mailto:"]):not([href^="javascript"])').attr('target','_blank');
+			$('.scrollnext').click(function(){
+				var nextcontent = $(this).parent().parent().next('section').data("anchor");
+				$(this).children().attr("href","#"+nextcontent);
+				$.fn.fullpage.moveTo(nextcontent);
+			});
+			function addNextLink(){
+				var numofsections = $('body').find('section');
+
+				$('section').each(function(index, element){
+					if ($(this).is('#section12')){
+						return false
+					}
+					else{
+						$(this).append('<div class="scrollnext"><a href="#" title="Scroll Down"></a></div>');
+					}
+				});
+			}
 		});
 	</script>
 	
@@ -41,7 +60,6 @@
 			<div class="square4">&nbsp;</div>
 			<div class="square5top">&nbsp;</div>
 			<div class="square5">&nbsp;</div>
-			
 		</section>
 		<section id="section1" data-anchor="i-am-a-user">
 			<!-- So here is a place where I made some modifications from the original fullPage.JS and forced it to look for the section element instead of .section.
@@ -49,7 +67,7 @@
 			<h2>I've been using Buffer pretty religiously for almost this many:</h2>
 			<img src="assets/img/this-many.jpg" alt="This Many (2)">
 		</section>
-		<section id="section2"data-anchor="your-awesome-team">
+		<section id="section2" data-anchor="your-awesome-team">
 			<h2>And I quickly grew to love not only the app but also the awesome people behind the app:</h2>
 			<div class="buffer-team">
 				<!-- Okay, yes, I am being a terrible person and hotlinking from your CloudFront CDN. I figured it would be a bit less creepy doing this than just housing all your photos on my own server. :) -->
