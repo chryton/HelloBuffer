@@ -216,4 +216,33 @@ section{
 	.center-text{
 		text-align: center;
 	}
+	.scrollnext {
+		position: absolute;
+		bottom: 40px;
+		left: 48.81%%;
+		@include hw (30px, 40px);
+		cursor: pointer;
+		&::before, &::after {
+			width: 25px;
+			height: 5px;
+			background: #E0E0E0;
+			@include dib;
+			position: absolute;
+			left: 0px;
+			top: 11px;
+			content: "";
+			-webkit-transform: rotate(45deg);
+			-moz-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			-o-transform: rotate(45deg);
+			transform: rotate(45deg);
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+		}
+		&::after {
+			-webkit-transform: rotate(-45deg);
+			left: 15px;
+		}
+	}
 }
