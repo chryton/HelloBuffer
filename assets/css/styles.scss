@@ -67,7 +67,7 @@ section{
 			border-left: 33px solid transparent;
 			border-right: 33px solid transparent;
 			border-top: 18px solid black;
-			z-index: 5
+			z-index: 5;
 		}
 		.square2{
 			position: relative;
@@ -188,7 +188,7 @@ section{
 		}
 	}
 	.colophon{
-		width: 35%;
+		width: 47%;
 		color: white;
 		@include mza;
 		& > ul{
