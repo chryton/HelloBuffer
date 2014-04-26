@@ -272,39 +272,30 @@ section{
 			}
 		}
 	}
-	.center-text{
-		text-align: center;
-	}
-	.scrollnext {
-		position: absolute;
-		bottom: 40px;
-		left: 48.81%%;
-		@include hw (30px, 40px);
-		cursor: pointer;
-		&::before, &::after {
-			width: 25px;
-			height: 5px;
-			background: #E0E0E0;
-			@include dib;
-			position: absolute;
-			left: 0px;
-			top: 11px;
-			content: "";
-			-webkit-transform: rotate(45deg);
-			-moz-transform: rotate(45deg);
-			-ms-transform: rotate(45deg);
-			-o-transform: rotate(45deg);
-			transform: rotate(45deg);
-			-webkit-border-radius: 5px;
-			-moz-border-radius: 5px;
-			border-radius: 5px;
-		}
-		&::after {
-			-webkit-transform: rotate(-45deg);
-			left: 15px;
+
+
+
+/* MEDIA QUERIES - Mostly to fix things on smaller screens */
+
+@media screen and (max-height: 975px) {
+	.buffer-team ul li{
+		width: 160px;
+		img{
+			width: 150px;
 		}
 	}
-	.bufferthis{
-		text-align: center;
+}
+@media screen and (max-height: 775px) {
+	.buffer-team ul li{
+		width: 130px;
+		img{
+			width: 120px;
+		}
+	}
+	.colophon{
+		font-size: .8em;
+		ul{
+			padding-bottom: 30px;
+		}
 	}
 }
