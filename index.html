@@ -28,6 +28,9 @@
 			$('a:not([href*="'+window.location.host+'"]):not([href^="#"]):not([href^="/"]):not([href^="mailto:"]):not([href^="javascript"])').attr('target','_blank');
 			$('.scrollnext').click(function(){
 				var nextcontent = $(this).parent().parent().next('section').data("anchor");
+				if (typeof nextcontent === 'undefined'){
+					nextcontent = $(this).parent().next('section').data("anchor");
+				}
 				$(this).children().attr("href","#"+nextcontent);
 				$.fn.fullpage.moveTo(nextcontent);
 			});
