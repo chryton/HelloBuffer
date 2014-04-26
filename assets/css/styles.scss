@@ -10,14 +10,17 @@ $buffergreen: #76b852;
 $bufferblue: #168eea;
 $andreworange: #FC7F13;
 
-@mixin dib{
+%dib{
 	display: inline-block;
 	zoom: 1;
 	*display: block;
 	vertical-align: top;
 }
-@mixin mza {
+%mza {
 	margin:0 auto;
+}
+%tac{
+	text-align: center;
 }
 @mixin hw ($height, $width: $height){
 	height: $height;
