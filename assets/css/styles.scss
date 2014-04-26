@@ -45,84 +45,15 @@ a{
 
 section{
 	h1,h2,h3{
-		text-align: center;
+		@extend %tac;
 		padding: 0 10%;
 	}
 	h2{font-size: 1.7em;}
 	h3{font-size: 1.2em;}
 	&#section0{
-		.buffer-top{
-			position: relative;
-			left: 48%;
-			width: 0; 
-			height: 0; 
-			border-left: 33px solid transparent;
-			border-right: 33px solid transparent;
-			border-bottom: 18px solid black;
-		}
-		.square1{
-			// background: black;
-			// width: 18px;
-			position: relative;
-			left: 48%;
-			width: 0; 
-			height: 0; 
-			border-left: 33px solid transparent;
-			border-right: 33px solid transparent;
-			border-top: 18px solid black;
-			z-index: 5;
-		}
-		.square2{
-			position: relative;
-			left: 48%;
-			width: 0; 
-			height: 0; 
-			border-left: 33px solid transparent;
-			border-right: 33px solid transparent;
-			border-top: 18px solid white;
-			// background: pink;
-			top: -11px;
-			z-index: 4;
-		}
-		.square3{@extend .square1;
-			z-index: 3;
-			top: -37px;
-		}
-		.square3top{@extend .buffer-top;
-			z-index: 3;
-			top: -37px;
-		}
-		.square4{@extend .square2;
-			top: -47px;
-			z-index: 2;
-		}
-		.square5{@extend .square1;
-			z-index: 1;
-			top: -73px;
-		}
-		.square5top{@extend .buffer-top;
-			z-index: 1;
-			top: -73px;
-		}
 	}
 	&#section1{
-		text-align: center;
-	}
-	.buffer-team{
-		width: 75%;
-		margin: 15px auto;
-		.team-member{
-			width: 200px;
-			margin-right: 15px;
-			img{
-				width: 200px;
-				-webkit-border-radius: 105px;
-				-moz-border-radius: 105px;
-				border-radius: 105px;
-				border: 5px solid #ccc;
-			}
-			@include dib;
-		}
+		@extend %tac;
 	}
 	&#section3{
 		background: url('../img/buffer-twitter.png');
@@ -136,19 +67,19 @@ section{
 		p{
 			width: 50%;
 			font-size: 1.438em;
-			@include mza;
+			@extend %mza;
 		}
 		a{
 			color: white;
 		}
 		.icon-tron{
 			@include hw (70px);
-			@include mza;
+			@extend %mza;
 			background:url('../img/tron_identity_disk_icon.png');
 			background-size: contain;
 		}
 		[class^="icon-"], [class*=" icon-"]{
-			text-align: center;
+			@extend %tac;
 			font-size: 50px;
 			margin-bottom: 15px;;
 		}
@@ -173,31 +104,156 @@ section{
 		background: url('http://baconmockup.com/1300/1200');
 		background-size: cover;
 	}
-	.contact-this{
-		@include mza;
-		width: 207px;
-		font-size: 40px;
-		a{
-			@include dib;
-			color: $buffergreen;
-			margin-left: 10px;
-			text-decoration: none;
-			&:first-child{
-				margin-left: 0px;
-			}
-			&:hover{
-				color: $bufferblue;
-			}
+}
+
+
+/* Building the Buffer Logo */
+
+.buffer-top{
+	position: relative;
+	left: 48%;
+	width: 0; 
+	height: 0; 
+	border-left: 33px solid transparent;
+	border-right: 33px solid transparent;
+	border-bottom: 18px solid black;
+	-moz-transform: scale(.9999);
+}
+.square1{
+	// background: black;
+	// width: 18px;
+	position: relative;
+	left: 48%;
+	width: 0; 
+	height: 0; 
+	border-left: 33px solid transparent;
+	border-right: 33px solid transparent;
+	border-top: 18px solid black;
+	z-index: 5;
+	-moz-transform: scale(.9999);
+}
+.square2{
+	position: relative;
+	left: 48%;
+	width: 0; 
+	height: 0; 
+	border-left: 33px solid transparent;
+	border-right: 33px solid transparent;
+	border-top: 18px solid white;
+	// background: pink;
+	top: -11px;
+	z-index: 4;
+	-moz-transform: scale(.9999);
+}
+.square3{@extend .square1;
+	z-index: 3;
+	top: -37px;
+}
+.square3top{@extend .buffer-top;
+	z-index: 3;
+	top: -37px;
+}
+.square4{@extend .square2;
+	top: -47px;
+	z-index: 2;
+}
+.square5{@extend .square1;
+	z-index: 1;
+	top: -73px;
+}
+.square5top{@extend .buffer-top;
+	z-index: 1;
+	top: -73px;
+}
+/* /Logo */
+
+.center-text, .bufferthis{
+	@extend %tac;
+}
+
+.scrollnext {
+	position: absolute;
+	bottom: 40px;
+	left: 48.81%;
+	@include hw (30px, 40px);
+	cursor: pointer;
+	&::before, &::after {
+		width: 25px;
+		height: 5px;
+		background: #E0E0E0;
+		@extend %dib;
+		position: absolute;
+		left: 0px;
+		top: 11px;
+		content: "";
+		-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+		transform: rotate(45deg);
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+	}
+	&::after {
+		-webkit-transform: rotate(-45deg);
+		-moz-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		-o-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+		left: 15px;
+	}
+}
+
+.buffer-team{
+	width: 75%;
+	margin: 15px auto;
+	@extend %tac;
+	ul{
+		margin: 0;
+		padding: 0;
+	}
+	li{
+		width: 210px;
+		margin-right: 15px;
+		img{
+			width: 200px;
+			-webkit-border-radius: 105px;
+			-moz-border-radius: 105px;
+			border-radius: 105px;
+			border: 5px solid #ccc;
+		}
+		@extend %dib;
+	}
+}
+
+.contact-this{
+	@extend %mza;
+	width: 207px;
+	font-size: 40px;
+	a{
+		@extend %dib;
+		color: $buffergreen;
+		margin-left: 10px;
+		text-decoration: none;
+		&:first-child{
+			margin-left: 0px;
+		}
+		&:hover{
+			color: $bufferblue;
 		}
 	}
-	.colophon{
+}
+
+.colophon{
 		width: 47%;
 		color: white;
-		@include mza;
+		@extend %mza;
 		& > ul{
 			padding: 0 0 40px 40px;
 			li{
 				margin-top: 7px;
+				font-size: .85em;
 			}
 		}
 		h2{
@@ -208,7 +264,7 @@ section{
 			color: $buffergreen;
 		}
 		.icon-transformers{
-			text-align: center;
+			@extend %tac;
 			font-size: 25px;
 			color: transparent;
 			&:hover{
